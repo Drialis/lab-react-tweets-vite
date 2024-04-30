@@ -6,7 +6,7 @@ import User from "./User";
 
 function Tweet({ tweet }) {
 
-  const { user, timestamp, message } = tweet
+  const { user, time, message } = tweet
   const { name, image, handle } = user
 
   return (
@@ -19,7 +19,7 @@ function Tweet({ tweet }) {
         <div className="top">
           <User name={name} handle={handle} />
 
-          <Timestamp timestamp={timestamp} />
+          <Timestamp timestamp={time} />
 
         </div>
 
